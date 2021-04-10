@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title%} Hello from Lome | {{ parent() }} {% endblock %}
+
+{% block body %}
+    <div class="flex-center full-height">
+        <div class="content">
+            <img src="{{ asset('/img/drapeau-togolais.png') }}" alt="Togo Flag">
+            <h1 class="title">Hello from Lome !</h1>
+
+           {#  <p> 🕧 It is currently {{ 'now'|date('H:i A ', 'America/Montreal') }} in Quebec</p> #}
+            <p> 🕧 It is currently {{ 'now'|date('H:i A ', 'Africa/Lome') }} in Lome</p>
+
+            <hr>
+
+            <p>&copy; copyright 2018 - {{ 'now'|date('Y') }} </p>
+        </div>
+    </div>
+{% endblock %}
